@@ -1,0 +1,1 @@
+[![Build Status](https://travis-ci.org/{{ cookiecutter.organization }}/{{ cookiecutter.repo_name }}.png?branch=master)](https://travis-ci.org/{{ cookiecutter.organization }}/{{ cookiecutter.repo_name }})

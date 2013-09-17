@@ -1,0 +1,11 @@
+{
+  "full_name": "TANABE Ken-ichi",
+  "email": "nabeken@tknetworks.org",
+  "github_username": "nabeken",
+  "organization": "tknetworks-cookbooks",
+  "repo_name": "boilerplate",
+  "project_shot_description": "cookbook for managing boilerplate",
+  "version": "0.0.1",
+  "os": "centos debian",
+  "depends": "apt"
+}
