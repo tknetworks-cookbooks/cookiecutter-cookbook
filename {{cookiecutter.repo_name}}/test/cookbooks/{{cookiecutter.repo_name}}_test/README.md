@@ -1,1 +1,1 @@
-A cookbook for testing parent, {{ cookiecutte.repo_name }}
+A cookbook for testing parent, {{ cookiecutter.repo_name }}
