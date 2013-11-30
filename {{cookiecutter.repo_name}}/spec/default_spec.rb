@@ -19,7 +19,7 @@ describe '{{ cookiecutter.repo_name }}::default' do
   include_context 'debian'
 
   let (:chef_run) {
-    ChefSpec::ChefRunner.new() do |node|
+    ChefSpec::Runner.new() do |node|
       set_node(node)
     end
   }
