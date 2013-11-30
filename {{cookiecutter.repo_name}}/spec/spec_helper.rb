@@ -14,6 +14,7 @@
 # limitations under the License.
 #
 require 'chefspec'
+require 'chefspec/berkshelf'
 
 shared_context 'debian' do
   def set_node(node)
