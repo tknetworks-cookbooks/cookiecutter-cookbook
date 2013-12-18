@@ -17,6 +17,5 @@ suites:
   encrypted_data_bag_secret_key_path: test/integration/secret_key
   run_list:
   - recipe[{{ cookiecutter.repo_name }}]
-  - recipe[minitest-handler]
   attributes:
     {{ cookiecutter.repo_name }}: "attribute"

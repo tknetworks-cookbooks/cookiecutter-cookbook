@@ -1,5 +1,5 @@
 #
-# Author:: {{ cookiecutter.full_name }} (<{{ cookiecutter.email }}>)
+# Author:: Ken-ichi TANABE (<nabeken@tknetworks.org>)
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,10 +13,18 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-require 'minitest/spec'
+require 'spec_helper'
 
-describe_recipe '{{ cookiecutter.repo_name }}::default' do
+describe '{{ cookiecutter.repo_name }}::default' do
   it "installs {{ cookiecutter.repo_name }} package" do
-    package("{{ cookiecutter.repo_name }}").must_be_installed
+    expect(package("{{ cookiecutter.repo_name }}")).to be_installed
+  end
+
+  describe file("/etc/{{ cookiecutter.repo_name }}.conf") do
+    it { should be_file }
+
+    its(:content) {
+      should contain 'foobar'
+    }
   end
 end
