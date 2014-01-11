@@ -1,7 +1,8 @@
 *.swp
 Gemfile.lock
 Berksfile.lock
-.vagrant
 vendor
-.kitchen/
+.vagrant
+.bundle
+.kitchen
 .kitchen.local.yml
